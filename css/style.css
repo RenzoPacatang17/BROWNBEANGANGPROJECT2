@@ -1,0 +1,521 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* NAVIGATION BAR SECTION */
+
+.container {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    background-color:#3E2723 ;
+}
+.container img {
+    width: 50px;
+    height: 50px;
+   margin: 10px 10px;
+}
+.container h1 {
+    color: white;
+}
+
+.menubtn {
+    display: none;
+}
+
+.sub-container {
+     margin-left: auto;
+     display: flex;
+     align-items: center;  
+}
+.sub-container ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 50px;
+}
+
+.sub-container ul li {
+    margin: 0 20px;
+}
+
+.sub-container ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: 0.5s ease;
+}
+.sub-container ul li a:hover {
+    background-color: #EAEAEA;
+    color: black;      
+}
+
+/* HOME SECTION*/
+
+.image-hero {
+    min-height: 80vh;
+    background-image: url("../images/coffee.jpg");
+    background-size: cover;
+    background-position: center; 
+    display: flex;
+    align-items: center;
+    padding: 0 20px; 
+}
+
+.hero-script {
+    width: 50%;
+    margin: 20px; 
+}
+
+.hero-script h2 {
+    font-size: 60px;
+    margin: 20px;
+    color: white;
+}
+
+.hero-script p {
+    font-size: 25px;
+    margin: 20px;
+    color: white;
+}
+
+.homebtn {
+    font-size: 25px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+}
+
+.homebtn:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s ease;
+}
+
+/* ABOUT SECTION */
+
+.about-header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.about-header h2 {
+    font-size: 50px;
+    position: relative;
+    display: inline-block;
+}
+
+.about-header h2::after {
+    content: "";
+    width: 80px;
+    height: 5px;
+    background: #6F4E37;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 8px;
+}
+
+.content {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content p {
+    margin-top: 50px;
+    font-size: 25px;
+    text-align: center;
+}
+
+/* GALLERY */
+
+.gallery-menu {
+    margin: 20px 0;
+    background-color: #6F4E37;
+}
+
+.gallery-header {
+    text-align: center;
+    padding: 30px 0;  
+}
+
+.gallery-header h2 {
+    font-size: 50px;
+    position: relative;
+    display: inline-block;
+    color: white;
+}
+
+.gallery-header h2::after {
+    content: "";
+    width: 80px;
+    height: 5px;
+    background: white;
+    
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 8px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    gap: 20px; 
+    padding: 20px 0;
+}
+
+.gallery img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* CONTACT SECTION */
+
+.contact {
+    margin: 20px;
+}
+
+.contact-header {
+    padding: 30px 0;
+    text-align: center;
+}
+.contact-header h2 {
+    font-size: 50px;
+    position: relative;
+    display: inline-block;
+}
+
+.contact-header h2::after {
+    content: "";
+    width: 80px;
+    height: 5px;
+    background: #6F4E37;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 8px;
+}
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.contact-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 20px 10px;
+    margin-top: 20px;
+    resize: none;
+}
+
+.contactbtn {
+    background-color: #6F4E37;
+    color: white;
+    width: 100px;
+    padding: 15px 10px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;  
+}
+
+.contact-info {
+    width: 40%;
+    margin: 30px 0;
+}
+.location,
+.inquries,
+.call,
+.time {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.info-text h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.info-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* FOOTER SECTION */
+
+footer {
+    background-color: #6F4E37;
+   text-align: center;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 25px;
+    color: white;
+    padding: 20px;
+}
+
+footer p a{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+
+    /*NAVIGATION BAR SECTION */
+
+    .menubtn {
+        font-size: 35px;
+        display: block;
+        color: white;
+         margin-left: auto;
+         padding: 20px;
+         cursor: pointer;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .container {     
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .container h1 {
+        font-size: 25px;
+    }
+    .sub-container {
+        width: 100%;
+        flex-direction: column;
+    }
+    .sub-container ul {
+        flex-direction: column;
+    }
+    .sub-container ul li {
+        margin: 20px;
+    }
+
+    /* HOME SECTION */
+    
+    .image-hero {
+        background-position-x: left;
+    }
+    .hero-script {
+        width: 70%;
+        text-align: center;
+    }
+
+    .hero-script h2 {
+        font-size: 30px;
+    }
+
+    .hero-script p {
+        font-size: 20px;
+    }
+
+    /* ABOUT SECTION */
+
+    .content {
+        width: 80%;       
+    }
+    .content p {
+        margin: 30px 10px;
+        font-size: 20px;
+    }
+
+    /* GALLERY SECTION */
+
+    .gallery-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .gallery img {
+        width: 420px;
+        height: auto;
+    }
+
+    /*CONTACT SECTION */
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    /*FOOTER SECTION */
+
+    footer {
+        text-align: center;
+    }
+    
+    footer p {
+        font-size: 20px;
+    }
+
+    footer p a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /*NAVIGATION BAR SECTION */
+
+    .menubtn {
+        font-size: 35px;
+        display: block;
+        color: white;
+         margin-left: auto;
+         padding: 20px;
+         cursor: pointer;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .container {     
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .container h1 {
+        font-size: 25px;
+    }
+    .sub-container {
+        width: 100%;
+        flex-direction: column;
+    }
+    .sub-container ul {
+        flex-direction: column;
+    }
+    .sub-container ul li {
+        margin: 20px;
+    }
+
+    /* HOME SECTION */
+    
+    .image-hero {
+        background-position-x: left;
+    }
+    .hero-script {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-script h2 {
+        font-size: 30px;
+    }
+
+    .hero-script p {
+        font-size: 20px;
+    }
+
+    /* ABOUT SECTION */
+
+    .content {
+        width: 100%;
+            
+    }
+
+    .content p {
+        margin: 30px 10px;
+        font-size: 20px;
+    }
+
+    /* GALLERY SECTION */
+
+    .gallery-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15px;
+        gap: 20px;
+    }
+
+    .gallery {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .gallery img {
+        width: 100%;
+        max-width: 450px;
+        height:auto
+    }
+
+    /*CONTACT SECTION */
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+    /*FOOTER SECTION */
+
+    footer {
+        text-align: center;
+    }
+    
+    footer p {
+        font-size: 20px;
+    }
+
+    footer p a {
+        font-size: 20px;
+    }
+}
