@@ -405,8 +405,8 @@ footer p a{
     /*NAVIGATION BAR SECTION */
 
     .menubtn {
-        font-size: 35px;
-        display: block;
+        font-size: 30px;
+        display: inline-block;
         color: white;
          margin-left: auto;
          padding: 20px;
